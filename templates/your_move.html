@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='move.css') }}">
+  </head>
+  <body>
+    <h1 class="t-title">Rock Paper Scissors</h1>
+    <div class="form-container">
+        <h2 class="t-subheading">Choose Your Move...</h2>
+        <form action="/result" method="post">
+            <label for="player_move">Select your move:</label>
+            <input type="text" name="player_move" id="player_move">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+  </body>
+</html>
